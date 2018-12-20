@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.pcchen.uar.mapper.local_pdmi.PubAccountAddTaskDTOMapper">
+    <resultMap id="BaseResultMap" type="org.pcchen.uar.bean.local_pdmi.PubAccountAddTaskDTO">
+        <id column="task_id" property="taskId" jdbcType="INTEGER"/>
+        <result column="user_id" property="userId" jdbcType="VARCHAR"/>
+        <result column="user_follow" property="userFollow" jdbcType="INTEGER"/>
+        <result column="create_date" property="createDate" jdbcType="TIMESTAMP"/>
+        <result column="modify_date" property="modifyDate" jdbcType="TIMESTAMP"/>
+        <result column="url" property="url" jdbcType="VARCHAR"/>
+        <result column="biz" property="biz" jdbcType="VARCHAR"/>
+        <result column="wx_id" property="wxId" jdbcType="VARCHAR"/>
+        <result column="wx_nickname" property="wxNickname" jdbcType="VARCHAR"/>
+        <result column="gsdata_group_id" property="gsdataGroupId" jdbcType="INTEGER"/>
+        <result column="task_status" property="taskStatus" jdbcType="INTEGER"/>
+        <result column="start_time" property="startTime" jdbcType="TIMESTAMP"/>
+        <result column="expired_time" property="expiredTime" jdbcType="TIMESTAMP"/>
+        <result column="industry_catalog_id" property="industryCatalogId" jdbcType="INTEGER"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    task_id, user_id, user_follow, create_date, modify_date, url, biz, wx_id, wx_nickname, 
+    gsdata_group_id, task_status, start_time, expired_time, industry_catalog_id
+  </sql>
+    <!-- 根据公众号查询记录 -->
+    <select id="selectByWXId" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select
+        <include refid="Base_Column_List"/>
+        from t_pub_account_add_task
+        where wx_id = #{wxId,jdbcType=INTEGER}
+    </select>
+
+
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List"/>
+        from t_pub_account_add_task
+        where task_id = #{taskId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete from t_pub_account_add_task
+        where task_id = #{taskId,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="org.pcchen.uar.bean.local_pdmi.PubAccountAddTaskDTO">
+    insert into t_pub_account_add_task (task_id, user_id, user_follow, 
+      create_date, modify_date, url, 
+      biz, wx_id, wx_nickname, 
+      gsdata_group_id, task_status, start_time, 
+      expired_time, industry_catalog_id)
+    values (#{taskId,jdbcType=INTEGER}, #{userId,jdbcType=VARCHAR}, #{userFollow,jdbcType=INTEGER}, 
+      #{createDate,jdbcType=TIMESTAMP}, #{modifyDate,jdbcType=TIMESTAMP}, #{url,jdbcType=VARCHAR}, 
+      #{biz,jdbcType=VARCHAR}, #{wxId,jdbcType=VARCHAR}, #{wxNickname,jdbcType=VARCHAR}, 
+      #{gsdataGroupId,jdbcType=INTEGER}, #{taskStatus,jdbcType=INTEGER}, #{startTime,jdbcType=TIMESTAMP}, 
+      #{expiredTime,jdbcType=TIMESTAMP}, #{industryCatalogId,jdbcType=INTEGER})
+  </insert>
+    <insert id="insertSelective" parameterType="org.pcchen.uar.bean.local_pdmi.PubAccountAddTaskDTO">
+        insert into t_pub_account_add_task
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="taskId != null">
+                task_id,
+            </if>
+            <if test="userId != null">
+                user_id,
+            </if>
+            <if test="userFollow != null">
+                user_follow,
+            </if>
+            <if test="createDate != null">
+                create_date,
+            </if>
+            <if test="modifyDate != null">
+                modify_date,
+            </if>
+            <if test="url != null">
+                url,
+            </if>
+            <if test="biz != null">
+                biz,
+            </if>
+            <if test="wxId != null">
+                wx_id,
+            </if>
+            <if test="wxNickname != null">
+                wx_nickname,
+            </if>
+            <if test="gsdataGroupId != null">
+                gsdata_group_id,
+            </if>
+            <if test="taskStatus != null">
+                task_status,
+            </if>
+            <if test="startTime != null">
+                start_time,
+            </if>
+            <if test="expiredTime != null">
+                expired_time,
+            </if>
+            <if test="industryCatalogId != null">
+                industry_catalog_id,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="taskId != null">
+                #{taskId,jdbcType=INTEGER},
+            </if>
+            <if test="userId != null">
+                #{userId,jdbcType=VARCHAR},
+            </if>
+            <if test="userFollow != null">
+                #{userFollow,jdbcType=INTEGER},
+            </if>
+            <if test="createDate != null">
+                #{createDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="modifyDate != null">
+                #{modifyDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="url != null">
+                #{url,jdbcType=VARCHAR},
+            </if>
+            <if test="biz != null">
+                #{biz,jdbcType=VARCHAR},
+            </if>
+            <if test="wxId != null">
+                #{wxId,jdbcType=VARCHAR},
+            </if>
+            <if test="wxNickname != null">
+                #{wxNickname,jdbcType=VARCHAR},
+            </if>
+            <if test="gsdataGroupId != null">
+                #{gsdataGroupId,jdbcType=INTEGER},
+            </if>
+            <if test="taskStatus != null">
+                #{taskStatus,jdbcType=INTEGER},
+            </if>
+            <if test="startTime != null">
+                #{startTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="expiredTime != null">
+                #{expiredTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="industryCatalogId != null">
+                #{industryCatalogId,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="org.pcchen.uar.bean.local_pdmi.PubAccountAddTaskDTO">
+        update t_pub_account_add_task
+        <set>
+            <if test="userId != null">
+                user_id = #{userId,jdbcType=VARCHAR},
+            </if>
+            <if test="userFollow != null">
+                user_follow = #{userFollow,jdbcType=INTEGER},
+            </if>
+            <if test="createDate != null">
+                create_date = #{createDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="modifyDate != null">
+                modify_date = #{modifyDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="url != null">
+                url = #{url,jdbcType=VARCHAR},
+            </if>
+            <if test="biz != null">
+                biz = #{biz,jdbcType=VARCHAR},
+            </if>
+            <if test="wxId != null">
+                wx_id = #{wxId,jdbcType=VARCHAR},
+            </if>
+            <if test="wxNickname != null">
+                wx_nickname = #{wxNickname,jdbcType=VARCHAR},
+            </if>
+            <if test="gsdataGroupId != null">
+                gsdata_group_id = #{gsdataGroupId,jdbcType=INTEGER},
+            </if>
+            <if test="taskStatus != null">
+                task_status = #{taskStatus,jdbcType=INTEGER},
+            </if>
+            <if test="startTime != null">
+                start_time = #{startTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="expiredTime != null">
+                expired_time = #{expiredTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="industryCatalogId != null">
+                industry_catalog_id = #{industryCatalogId,jdbcType=INTEGER},
+            </if>
+        </set>
+        where task_id = #{taskId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="org.pcchen.uar.bean.local_pdmi.PubAccountAddTaskDTO">
+    update t_pub_account_add_task
+    set user_id = #{userId,jdbcType=VARCHAR},
+      user_follow = #{userFollow,jdbcType=INTEGER},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      modify_date = #{modifyDate,jdbcType=TIMESTAMP},
+      url = #{url,jdbcType=VARCHAR},
+      biz = #{biz,jdbcType=VARCHAR},
+      wx_id = #{wxId,jdbcType=VARCHAR},
+      wx_nickname = #{wxNickname,jdbcType=VARCHAR},
+      gsdata_group_id = #{gsdataGroupId,jdbcType=INTEGER},
+      task_status = #{taskStatus,jdbcType=INTEGER},
+      start_time = #{startTime,jdbcType=TIMESTAMP},
+      expired_time = #{expiredTime,jdbcType=TIMESTAMP},
+      industry_catalog_id = #{industryCatalogId,jdbcType=INTEGER}
+    where task_id = #{taskId,jdbcType=INTEGER}
+  </update>
+</mapper>
