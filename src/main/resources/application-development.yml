@@ -1,0 +1,15 @@
+server:
+  port: 8889
+
+#mybatis打印日志，注意是mapper的包
+logging:
+  level:
+     com.hubpd.bigscreen.mapper: info
+
+# 本地pdmi 数据源配置
+local_pdmi:
+  datasource:
+    url: jdbc:mysql://localhost:3306/pdmi?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
