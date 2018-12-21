@@ -49,6 +49,10 @@ public class GSDataConstants {
      * 通过UID返回用户分组
      */
     public static String API_GET_ALL_GROUP_INFO;
+    /**
+     * 获取一个公众号详情
+     */
+    public static String API_GET_NICKNAME_ONE;
 
 
     @Value("${gsdata_appId}")
@@ -109,5 +113,10 @@ public class GSDataConstants {
     @Value("${gsdata_group_id}")
     public void setGsdataGroupId(Integer gsdataGroupId) {
         this.GSDATA_GROUP_ID = gsdataGroupId;
+    }
+
+    @Value("${api_get_nickname_one}")
+    public void setApiGetNicknameOne(String apiGetNicknameOne) {
+        this.API_GET_NICKNAME_ONE = apiGetNicknameOne;
     }
 }

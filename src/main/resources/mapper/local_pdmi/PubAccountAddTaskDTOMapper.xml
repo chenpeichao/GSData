@@ -28,6 +28,18 @@
         from t_pub_account_add_task
         where wx_id = #{wxId,jdbcType=INTEGER}
     </select>
+    <!-- 查询url为null的微信公众号 -->
+    <select id="selectWXIdListByUrlIsNull" resultType="java.lang.String">
+        SELECT wx_id FROM t_pub_account_add_task WHERE url IS NULL
+    </select>
+    <!-- 获取所有的公众号集合 -->
+    <select id="selectAllWxIdList" resultType="java.lang.String">
+        SELECT wx_id FROM t_pub_account_add_task
+    </select>
+    <!-- 根据wxId对于任务表中微信的url信息为null的数据进行更新 -->
+    <update id="updateUrlByWXId" parameterType="java.util.Map">
+        UPDATE t_pub_account_add_task SET url= #{wxUrl,jdbcType=VARCHAR} WHERE wx_id= #{wxId,jdbcType=VARCHAR};
+    </update>
 
 
     <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">

@@ -41,7 +41,7 @@ public class SearchKeyword {
             // 调用接口
             jsonResponeData = dataApi.callInterFace(GSDataConstants.API_NICKNAME_KEYWORD_SEARCH, requestParamsMap);
 
-            logger.debug(GSDataConstants.API_NICKNAME_KEYWORD_SEARCH + " params:" + requestParamsMap
+            logger.info(GSDataConstants.API_NICKNAME_KEYWORD_SEARCH + " params:" + requestParamsMap
                     + " response:" + jsonResponeData);
 
         } catch (Exception e) {

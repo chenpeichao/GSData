@@ -13,3 +13,11 @@ local_pdmi:
     username: root
     password: root
     driverClassName: com.mysql.jdbc.Driver
+
+# 本地uar_analyse_content_search 数据源配置
+uar_analyse_content_search:
+  datasource:
+    url: jdbc:mysql://localhost:3306/uar_analyse_content_search?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
