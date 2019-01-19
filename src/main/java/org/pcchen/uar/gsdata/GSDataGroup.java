@@ -2,6 +2,7 @@ package org.pcchen.uar.gsdata;
 
 import cn.gsdata.index.ApiSdk;
 import org.apache.log4j.Logger;
+import org.pcchen.uar.utils.DataApi;
 import org.pcchen.uar.utils.GSDataConstants;
 
 import java.util.HashMap;
@@ -27,7 +28,7 @@ public class GSDataGroup {
     public static String addWXToGroupByurlAndReturnWXInfo(String groupid, String url) {
         String jsonResponeData = "";
         try {
-            ApiSdk dataApi = ApiSdk.getApiSdk(GSDataConstants.GSDATA_APPID, GSDataConstants.GSDATA_APPKEY);
+            ApiSdk dataApi = ApiSdk.getApiSdk(DataApi.gsdata_appID, DataApi.gsdata_appKey);
             Map<String, Object> requestParamsMap = new HashMap<String, Object>();
 
             // 分组ID
@@ -36,13 +37,13 @@ public class GSDataGroup {
             requestParamsMap.put("url", url);
 
             // 调用接口
-            jsonResponeData = dataApi.callInterFace(GSDataConstants.API_ADD_WX_TO_GROUP_BY_URL, requestParamsMap);
+            jsonResponeData = dataApi.callInterFace(DataApi.CustomAPI_add_weixin2group_byurl, requestParamsMap);
 
-            logger.debug(GSDataConstants.API_ADD_WX_TO_GROUP_BY_URL + " params:" + requestParamsMap
+            logger.debug(DataApi.CustomAPI_add_weixin2group_byurl + " params:" + requestParamsMap
                     + " response:" + jsonResponeData);
 
         } catch (Exception e) {
-            logger.error(GSDataConstants.API_ADD_WX_TO_GROUP_BY_URL + "获取代码出错:", e);
+            logger.error(DataApi.CustomAPI_add_weixin2group_byurl + "获取代码出错:", e);
         } finally {
             return jsonResponeData;
         }
@@ -56,17 +57,17 @@ public class GSDataGroup {
     public static String getAllGroup() {
         String jsonResponeData = "";
         try {
-            ApiSdk dataApi = ApiSdk.getApiSdk(GSDataConstants.GSDATA_APPID, GSDataConstants.GSDATA_APPKEY);
+            ApiSdk dataApi = ApiSdk.getApiSdk(DataApi.gsdata_appID, DataApi.gsdata_appKey);
             Map<String, Object> requestParamsMap = new HashMap<String, Object>();
 
             // 调用接口
-            jsonResponeData = dataApi.callInterFace(GSDataConstants.API_GET_ALL_GROUP_INFO, requestParamsMap);
+            jsonResponeData = dataApi.callInterFace(DataApi.get_all_group, requestParamsMap);
 
-            logger.debug(GSDataConstants.API_GET_ALL_GROUP_INFO + " params:" + requestParamsMap
+            logger.debug(DataApi.get_all_group + " params:" + requestParamsMap
                     + " response:" + jsonResponeData);
 
         } catch (Exception e) {
-            logger.error(GSDataConstants.API_GET_ALL_GROUP_INFO + "获取代码出错:", e);
+            logger.error(DataApi.get_all_group + "获取代码出错:", e);
         } finally {
             return jsonResponeData;
         }

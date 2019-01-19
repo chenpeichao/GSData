@@ -1,20 +1,24 @@
 package org.pcchen.uar.utils;
 
 /**
- * Í¨¹ıGSData½Ó¿Ú£¬¶ÔÖ¸¶¨ÕË»§ÏÂµÄÎ¢ĞÅ×÷Æ·¼°ÆäÓÃ»§·´À¡Êı¾İ½øĞĞ²É¼¯
+ * ???GSData??????????????????????????????????????ï¿½ï¿½??
  *
  * @author
  */
 public class DataApi {
-//    //ÈÕÖ¾¶ÔÏó
+    //    //???????
 ////    private static Logger logger = Logger.getLogger(iims.crt.gsdata.DataApi.class.getName());
 //
-//    //»ñÈ¡ApiSdk µ¥Àı¶ÔÏó
+//    //???ApiSdk ????????
 //    private ApiSdk apiSdk = null;
 //
-//    //»ñÈ¡ÎÄÕÂµÄ½Ó¿Ú
-//    public static String gsdata_appID = "mzgvw1O7nYnglPvhjHST";
-//    public static String gsdata_appKey = "0h3mrJcord72zHOeJY4TnTFqO";
+//    //??????????
+    //uar-wechat
+//    public static String gsdata_appID = "5ko4v23gv89Ue61C7ss7";
+//    public static String gsdata_appKey = "1UXqUKFyznnBLqkaD54liqMyr";
+    //crt
+    public static String gsdata_appID = "mzgvw1O7nYnglPvhjHST";
+    public static String gsdata_appKey = "0h3mrJcord72zHOeJY4TnTFqO";
 //    // public static String CustomAPI_wx_url_monitor = "http://open.gsdata.cn/api/custom/customapi/wx_url_monitor";
 //    public static String CustomAPI_wx_url_monitor = "http://open.gsdata.cn/api/custom/customapi/wx_url_content_monitor";
 //    public static String CustomAPI_wx_url_2 = "http://open.gsdata.cn/api/custom/customapi/wx_articles_by_wxname";
@@ -26,53 +30,59 @@ public class DataApi {
 //    public static String CustomAPI_add_weixin2group = "http://open.gsdata.cn/api/wx/wxapi/add_wx_to_groupMonitor";
 //    public static String CustomAPI_addname_weixin2group = "http://open.gsdata.cn/api/wx/wxapi/nickname_one";
 //    public static String CustomAPI_del_weixin2group = "http://open.gsdata.cn/api/wx/wxapi/del_wx_from_groupMonitor";
-//    public static String CustomAPI_add_weixin2group_byurl = "http://open.gsdata.cn/api/wx/wxapi/add_wx_to_group_by_url";//Ìí¼ÓÎ¢ĞÅ¹«ÖÚÕËºÅµ½·Ö×é²¢·µ»Ø¹«ÖÚºÅÏà¹ØĞÅÏ¢
-//    public static String CustomAPI_add_groupandmonitor = "http://open.gsdata.cn/api/custom/customapi/add_wx_to_group_monitor";//Ìí¼ÓÎ¢ĞÅ¹«ÖÚÕËºÅµ½·Ö×é²¢¼ÓÈë¼à²â£¬·µ»Ø¹«ÖÚºÅÏà¹ØĞÅÏ¢
+public static String CustomAPI_add_weixin2group_byurl = "http://open.gsdata.cn/api/wx/wxapi/add_wx_to_group_by_url";//????????????????ï¿½ï¿½??????????????
+    //    public static String CustomAPI_add_groupandmonitor = "http://open.gsdata.cn/api/custom/customapi/add_wx_to_group_monitor";//????????????????ï¿½ï¿½????????????????????
 //
 //
-//    public static String get_all_group = "http://open.gsdata.cn/api/wx/wxapi/group_name";//Í¨¹ıUID·µ»ØÓÃ»§·Ö×é
+    public static String get_all_group = "http://open.gsdata.cn/api/wx/wxapi/group_name";//???UID???????????
+    // query
+    public static String query_readnum_detail = "http://open.gsdata.cn/api/custom/customapi/query_readnum_detail";
+    //è·å–å®æ—¶æ–‡ç« æ¥å£
+    public static String wx_url_monitor = "http://open.gsdata.cn/api/custom/customapi/wx_url_monitor";
+    //é€šè¿‡æ–‡ç« URLè·å–è¯¥æ–‡ç« è¯„è®ºä¿¡æ¯
+    public static String wx_comment_by_url = "http://open.gsdata.cn/api/wx/wxapi2/wx_comment_by_url";
 //
 //    /**
-//     * ÊµÊ±¸ú×ÙµÄ½Ó¿Úµ÷ÓÃ
+//     * ????????????
 //     */
 //    public static String API_PDMI_KEYWORD = "http://open.gsdata.cn/api/pdmi/pdmi_keyword";
 //
 //    /**
-//     * ÊµÊ±»ñÈ¡µ¥ÆªÎ¢ĞÅÎÄÕÂÔÄ¶ÁÊıµãÔŞÊı
+//     * ??????????????????????????
 //     */
 //    public static String API_WX_NUMS_MONITOR = "http://open.gsdata.cn/api/wx/wxapi/wx_nums_monitor";
 //
 //    /**
-//     * ¸ù¾İ¹Ø¼ü´ÊËÑË÷¹«ÖÚºÅÎÄÕÂ
+//     * ?????????????????????
 //     */
 //    public static String CUSTOMAPI_CONTENT_KEYWORD_SEARCH
 //            = "http://open.gsdata.cn/api/wx/opensearchapi/content_keyword_search";
 //
 //    /**
-//     * ´Ó¹Ø¼ü×Ö¼ìË÷ÎÄÕÂ³öÕıÎÄµÄurlÍ¨¹ıÇå²©½Ó¿Ú»ñÈ¡ÕıÎÄÄÚÈİ
+//     * ???????????????????url????ï¿½ï¿½?????????????
 //     */
 //    public static String CUSTOMAPI_CONTENT = "http://open.gsdata.cn/api/wx/wxapi/wx_content2";
 //
 //
 //    public static int gsdata_groupID = 27657;
 //
-//    //Ã¿´Î·µ»ØµÄ×î´óÌõÄ¿Êı
+//    //??ï¿½ï¿½????????????
 //    public static int MaxRows_Request = 10;
 //
-//    //½Ó¿ÚÉùÃ÷µÄÎÄÕÂÊı
+//    //???????????????
 //    public static int totalArticles = 0;
-//    //Êµ¼Ê²É¼¯µ½µÄÎÄÕÂÊı
+//    //???????????????
 //    public static int totalArticlesBeGet = 0;
-//    //¸üĞÂµÄÎÄÕÂÊı
+//    //???????????
 //    public static int totalUpdatedArticles = 0;
-//    //±£´æµÄĞÂÎÄÕÂÊı
+//    //?????????????
 //    public static int newArticlesBeSaved = 0;
 //
 //
 //    private static DataApi apiService = null;
 //
 //    /**
-//     * µ¥Àı
+//     * ????
 //     */
 //    public static synchronized DataApi getInstance() {
 //        if (apiService == null)
@@ -87,7 +97,7 @@ public class DataApi {
 //    }
 //
 //    /**
-//     * ½âÎöJsonÒ³Ãæ£¬»ñÈ¡ArticleÁĞ±í
+//     * ????Json??ï¿½ï¿½???Article?ï¿½ï¿½?
 //     *
 //     * @param strJson
 //     */
@@ -138,14 +148,14 @@ public class DataApi {
 //                list.add(oriArticle);
 //            }
 //        } catch (Exception e) {
-//            logger.error("return json:" + strJson + "\n »ñÈ¡´úÂë³ö´í:", e);
+//            logger.error("return json:" + strJson + "\n ??????????:", e);
 //        }
 //
 //        return list;
 //    }
 //
 //    /**
-//     * Í¨¹ıGSDATA SDKµ÷ÓÃ
+//     * ???GSDATA SDK????
 //     *
 //     * @return
 //     */
@@ -154,8 +164,8 @@ public class DataApi {
 //
 //        try {
 //            /*
-//             * ²ÎÊı¼¯ºÏ ´Ë´¦²ÎÊı²»ĞèÒª¼ÓappidºÍappkey,ÒòÎªÉÏÃæ¹¹Ôìµ¥Àı¶ÔÏóÊ±£¬ÒÑ¾­Ä¬ÈÏ¼ÓÉÏÁË£¬
-//             * Èç¹ûÊ¹ÓÃ·Çµ¥Àı¶ÔÏóÄ£Ê½£¬ÔÚÏÂÃæ²ÎÊı¼¯ºÏÖĞĞèÒª ¼ÓÉÏappidºÍappkey
+//             * ???????? ??????????????appid??appkey,??????ï¿½ï¿½???????????????????????
+//             * ?????ï¿½ï¿½?????????????????????????????? ????appid??appkey
 //             */
 //            Map<String, Object> requestParamsMap = new HashMap<String, Object>();
 //
@@ -166,22 +176,22 @@ public class DataApi {
 //            requestParamsMap.put("group_id", gsdata_groupID);
 //            requestParamsMap.put("page", pageNo);
 //
-//            //µ÷ÓÃ½Ó¿Ú
+//            //??????
 //            ret_json = apiSdk.callInterFace(CustomAPI_wx_url_monitor, requestParamsMap);
 //
 //            logger.info(ret_json);
 //
-//            //½«Utf8×ª»»³Égbk
+//            //??Utf8?????gbk
 //            //ret_json = StringUtil.utf82gbk(ret_json);
 //
 //        } catch (Exception e) {
-//            logger.error("»ñÈ¡´úÂë³ö´í:", e);
+//            logger.error("??????????:", e);
 //        }
 //
 //        return ret_json;
 //    }
 //    /**
-//     * ×Ô¶¨Òå½Ó¿Ú
+//     * ???????
 //     *
 //     * @return
 //     */
@@ -190,8 +200,8 @@ public class DataApi {
 //
 //        try {
 //            /*
-//             * ²ÎÊı¼¯ºÏ ´Ë´¦²ÎÊı²»ĞèÒª¼ÓappidºÍappkey,ÒòÎªÉÏÃæ¹¹Ôìµ¥Àı¶ÔÏóÊ±£¬ÒÑ¾­Ä¬ÈÏ¼ÓÉÏÁË£¬
-//             * Èç¹ûÊ¹ÓÃ·Çµ¥Àı¶ÔÏóÄ£Ê½£¬ÔÚÏÂÃæ²ÎÊı¼¯ºÏÖĞĞèÒª ¼ÓÉÏappidºÍappkey
+//             * ???????? ??????????????appid??appkey,??????ï¿½ï¿½???????????????????????
+//             * ?????ï¿½ï¿½?????????????????????????????? ????appid??appkey
 //             */
 //            Map<String, Object> requestParamsMap = new HashMap<String, Object>();
 //
@@ -202,22 +212,22 @@ public class DataApi {
 //            requestParamsMap.put("endDate", "2018-09-12 24:00:00");
 //            requestParamsMap.put("wxName", "rmrbwx");
 //
-//            //µ÷ÓÃ½Ó¿Ú
+//            //??????
 //            ret_json = apiSdk.callInterFace(CustomAPI_wx_url_2, requestParamsMap);
 //
 //            logger.info(ret_json);
 //
-//            //½«Utf8×ª»»³Égbk
+//            //??Utf8?????gbk
 //            //ret_json = StringUtil.utf82gbk(ret_json);
 //
 //        } catch (Exception e) {
-//            logger.error("»ñÈ¡´úÂë³ö´í:", e);
+//            logger.error("??????????:", e);
 //        }
 //
 //        return ret_json;
 //    }
 //    /**
-//     * ×Ô¶¨Òå½Ó¿Ú3
+//     * ???????3
 //     *
 //     * @return
 //     */
@@ -226,15 +236,15 @@ public class DataApi {
 //
 //        try {
 //            /*
-//             * ²ÎÊı¼¯ºÏ ´Ë´¦²ÎÊı²»ĞèÒª¼ÓappidºÍappkey,ÒòÎªÉÏÃæ¹¹Ôìµ¥Àı¶ÔÏóÊ±£¬ÒÑ¾­Ä¬ÈÏ¼ÓÉÏÁË£¬
-//             * Èç¹ûÊ¹ÓÃ·Çµ¥Àı¶ÔÏóÄ£Ê½£¬ÔÚÏÂÃæ²ÎÊı¼¯ºÏÖĞĞèÒª ¼ÓÉÏappidºÍappkey
+//             * ???????? ??????????????appid??appkey,??????ï¿½ï¿½???????????????????????
+//             * ?????ï¿½ï¿½?????????????????????????????? ????appid??appkey
 //             */
 //            Map<String, Object> requestParamsMap = new HashMap<String, Object>();
 //
 //            SimpleDateFormat formats = new SimpleDateFormat("yyyy-MM-dd");
 //            String yesterday = formats.format(new Date().getTime() - 1 * 24 * 60 * 60 * 1000);
 //
-////            requestParamsMap.put("keyword", "ÈËÃñÈÕ±¨");
+////            requestParamsMap.put("keyword", "???????");
 ////            requestParamsMap.put("start", "0");
 ////            requestParamsMap.put("num", "10");
 //
@@ -244,31 +254,31 @@ public class DataApi {
 ////            requestParamsMap.put("page", 0);
 ////            requestParamsMap.put("rows", 10);
 //
-//            requestParamsMap.put("keyword", "ÓĞµÀ");
+//            requestParamsMap.put("keyword", "?ï¿½ï¿½?");
 //            requestParamsMap.put("start", 0);
 //            requestParamsMap.put("num", 10);
 //
-//            //µ÷ÓÃ½Ó¿Ú
+//            //??????
 ////            ret_json = apiSdk.callInterFace(CustomAPI_wx_url_4, requestParamsMap);
 //            ret_json = apiSdk.callInterFace(CustomAPI_wx_url_3, requestParamsMap);
 //
 //            logger.info(ret_json);
 //
-//            //½«Utf8×ª»»³Égbk
+//            //??Utf8?????gbk
 //            //ret_json = StringUtil.utf82gbk(ret_json);
 //
 //        } catch (Exception e) {
-//            logger.error("»ñÈ¡´úÂë³ö´í:", e);
+//            logger.error("??????????:", e);
 //        }
 //
 //        return ret_json;
 //    }
 //
 //    /**
-//     * »ñÈ¡Î¢ĞÅÊı¾İ×´¿ö
+//     * ?????????????
 //     *
-//     * @param page        ËÑË÷½á¹û¿ªÊ¼Ò³£¨Ä¬ÈÏÎª0£©
-//     * @param nicknameIds Æ½Ì¨ÄÚ¹«ÖÚºÅID¼¯ÒÔ¶ººÅ·Ö¸ô(¸ñÊ½£º1001,1002,1003)
+//     * @param page        ?????????????????0??
+//     * @param nicknameIds ????????ID?????????(?????1001,1002,1003)
 //     * @return
 //     */
 //    public String getResponseData(int page, String nicknameIds) {
@@ -276,8 +286,8 @@ public class DataApi {
 //
 //        try {
 //            /*
-//             * ²ÎÊı¼¯ºÏ ´Ë´¦²ÎÊı²»ĞèÒª¼ÓappidºÍappkey,ÒòÎªÉÏÃæ¹¹Ôìµ¥Àı¶ÔÏóÊ±£¬ÒÑ¾­Ä¬ÈÏ¼ÓÉÏÁË£¬
-//             * Èç¹ûÊ¹ÓÃ·Çµ¥Àı¶ÔÏóÄ£Ê½£¬ÔÚÏÂÃæ²ÎÊı¼¯ºÏÖĞĞèÒª ¼ÓÉÏappidºÍappkey
+//             * ???????? ??????????????appid??appkey,??????ï¿½ï¿½???????????????????????
+//             * ?????ï¿½ï¿½?????????????????????????????? ????appid??appkey
 //             */
 //            Map<String, Object> requestParamsMap = new HashMap<String, Object>();
 //
@@ -289,28 +299,28 @@ public class DataApi {
 //            requestParamsMap.put("nickname_ids", nicknameIds);
 //            requestParamsMap.put("page", page);
 //
-//            //µ÷ÓÃ½Ó¿Ú
+//            //??????
 //            ret_json = apiSdk.callInterFace(CustomAPI_wx_url_monitor, requestParamsMap);
 //
 //            logger.info(ret_json);
 //
-//            //½«Utf8×ª»»³Égbk
+//            //??Utf8?????gbk
 //            //ret_json = StringUtil.utf82gbk(ret_json);
 //
 //        } catch (Exception e) {
-//            logger.error("»ñÈ¡´úÂë³ö´í:", e);
+//            logger.error("??????????:", e);
 //        }
 //
 //        return ret_json;
 //    }
 //
 //    /**
-//     * »ñÈ¡Î¢ĞÅÊı¾İ×´¿ö
+//     * ?????????????
 //     *
-//     * @param page        ËÑË÷½á¹û¿ªÊ¼Ò³£¨Ä¬ÈÏÎª0£©
-//     * @param nicknameIds Æ½Ì¨ÄÚ¹«ÖÚºÅID¼¯ÒÔ¶ººÅ·Ö¸ô(¸ñÊ½£º1001,1002,1003)
-//     * @param beginDate   ²éÑ¯¿ªÊ¼Ê±¼ä (¸ñÊ½£ºyyyy-MM-dd Ä¬ÈÏ£º±¾ÔÂµÚÒ»Ìì)
-//     * @param endDate     ²éÑ¯½áÊøÊ±¼ä (¸ñÊ½£ºyyyy-MM-dd Ä¬ÈÏ£º±¾ÔÂ×îºóÒ»Ìì)
+//     * @param page        ?????????????????0??
+//     * @param nicknameIds ????????ID?????????(?????1001,1002,1003)
+//     * @param beginDate   ????????? (?????yyyy-MM-dd ????????????)
+//     * @param endDate     ?????????? (?????yyyy-MM-dd ??????????????)
 //     * @return
 //     */
 //    public String getResponseData(int page, String nicknameIds, String beginDate, String endDate) {
@@ -318,8 +328,8 @@ public class DataApi {
 //
 //        try {
 //            /*
-//             * ²ÎÊı¼¯ºÏ ´Ë´¦²ÎÊı²»ĞèÒª¼ÓappidºÍappkey,ÒòÎªÉÏÃæ¹¹Ôìµ¥Àı¶ÔÏóÊ±£¬ÒÑ¾­Ä¬ÈÏ¼ÓÉÏÁË£¬
-//             * Èç¹ûÊ¹ÓÃ·Çµ¥Àı¶ÔÏóÄ£Ê½£¬ÔÚÏÂÃæ²ÎÊı¼¯ºÏÖĞĞèÒª ¼ÓÉÏappidºÍappkey
+//             * ???????? ??????????????appid??appkey,??????ï¿½ï¿½???????????????????????
+//             * ?????ï¿½ï¿½?????????????????????????????? ????appid??appkey
 //             */
 //            Map<String, Object> requestParamsMap = new HashMap<String, Object>();
 //
@@ -329,28 +339,28 @@ public class DataApi {
 //            requestParamsMap.put("nickname_ids", nicknameIds);
 //            requestParamsMap.put("page", page);
 //
-//            //µ÷ÓÃ½Ó¿Ú
+//            //??????
 //            ret_json = apiSdk.callInterFace(CustomAPI_wx_url_monitor, requestParamsMap);
 //
 //            logger.info(ret_json);
 //
-//            //½«Utf8×ª»»³Égbk
+//            //??Utf8?????gbk
 //            //ret_json = StringUtil.utf82gbk(ret_json);
 //
 //        } catch (Exception e) {
-//            logger.error("»ñÈ¡´úÂë³ö´í:", e);
+//            logger.error("??????????:", e);
 //        }
 //
 //        return ret_json;
 //    }
 //
 //    /**
-//     * »ñÈ¡Î¢ĞÅÊı¾İ×´¿ö
+//     * ?????????????
 //     *
-//     * @param page        ËÑË÷½á¹û¿ªÊ¼Ò³£¨Ä¬ÈÏÎª0£©
-//     * @param nicknameIds Æ½Ì¨ÄÚ¹«ÖÚºÅID¼¯ÒÔ¶ººÅ·Ö¸ô(¸ñÊ½£º1001,1002,1003)
-//     * @param beginDate   ²éÑ¯¿ªÊ¼Ê±¼ä (¸ñÊ½£ºyyyy-MM-dd Ä¬ÈÏ£º±¾ÔÂµÚÒ»Ìì)
-//     * @param endDate     ²éÑ¯½áÊøÊ±¼ä (¸ñÊ½£ºyyyy-MM-dd Ä¬ÈÏ£º±¾ÔÂ×îºóÒ»Ìì)
+//     * @param page        ?????????????????0??
+//     * @param nicknameIds ????????ID?????????(?????1001,1002,1003)
+//     * @param beginDate   ????????? (?????yyyy-MM-dd ????????????)
+//     * @param endDate     ?????????? (?????yyyy-MM-dd ??????????????)
 //     * @return
 //     */
 //    public List<WxUrlMonitorResult> getResponseData(int page, String nicknameIds, Date beginDate, Date endDate) {
@@ -358,16 +368,16 @@ public class DataApi {
 //
 //        try {
 //            /*
-//             * ²ÎÊı¼¯ºÏ ´Ë´¦²ÎÊı²»ĞèÒª¼ÓappidºÍappkey,ÒòÎªÉÏÃæ¹¹Ôìµ¥Àı¶ÔÏóÊ±£¬ÒÑ¾­Ä¬ÈÏ¼ÓÉÏÁË£¬
-//             * Èç¹ûÊ¹ÓÃ·Çµ¥Àı¶ÔÏóÄ£Ê½£¬ÔÚÏÂÃæ²ÎÊı¼¯ºÏÖĞĞèÒª ¼ÓÉÏappidºÍappkey
+//             * ???????? ??????????????appid??appkey,??????ï¿½ï¿½???????????????????????
+//             * ?????ï¿½ï¿½?????????????????????????????? ????appid??appkey
 //             */
 //            Map<String, Object> requestParamsMap = new HashMap<>();
-//            // ÅĞ¶Ï¿ªÊ¼Ê±¼ä
+//            // ?ï¿½ï¿½??????
 //            if (beginDate == null) {
 //                beginDate = new Date();
 //            }
 //            requestParamsMap.put("beginDate", DateFormatUtils.format(beginDate, "yyyy-MM-dd"));
-//            // ÅĞ¶Ï¿ªÊ¼Ê±¼ä
+//            // ?ï¿½ï¿½??????
 //            if (endDate == null) {
 //                endDate = new Date();
 //            }
@@ -376,7 +386,7 @@ public class DataApi {
 //            requestParamsMap.put("nickname_ids", nicknameIds);
 //            requestParamsMap.put("page", page);
 //
-//            //µ÷ÓÃ½Ó¿Ú
+//            //??????
 //            String ret_json = apiSdk.callInterFace(CustomAPI_wx_url_monitor, requestParamsMap);
 //            // log
 //            logger.info(MessageFormat.format("params is {0}, \n response data is {1}",
@@ -393,79 +403,79 @@ public class DataApi {
 //                for (int i = 0; i < articleListArray.length(); i++) {
 //                    JSONObject returnData = (JSONObject) articleListArray.get(i);
 //                    record = new WxUrlMonitorResult();
-//                    // 	Î¢ĞÅ¹«ÖÚºÅÃû³Æ
+//                    // 	???????????
 //                    if (returnData.has("name"))
 //                        record.setName(returnData.getString("name"));
 //
-//                    // 	Î¢ĞÅ¹«ÖÚºÅÕËºÅ
+//                    // 	??????????
 //                    if (returnData.has("wx_name"))
 //                        record.setWxName(returnData.getString("wx_name"));
 //
-//                    // 	Æ½Ì¨ÄÚ¹«ÖÚºÅID
+//                    // 	????????ID
 //                    if (returnData.has("nickname_id"))
 //                        record.setNickNameId(returnData.getInt("nickname_id"));
 //
-//                    // 	ÎÄÕÂ·¢²¼Ê±¼ä
+//                    // 	???ï¿½ï¿½??????
 //                    if (returnData.has("posttime"))
 //                        record.setPostTime(returnData.getString("posttime"));
 //
-//                    // 		ÎÄÕÂ±êÌâ
+//                    // 		???ï¿½ï¿½???
 //                    if (returnData.has("title"))
 //                        record.setTitle(returnData.getString("title"));
 //
-//                    // 	ÎÄÕÂÕıÎÄ
+//                    // 	????????
 //                    if (returnData.has("content"))
 //                        record.setContent(returnData.getString("content"));
 //
-//                    // 	Î¢ĞÅÎÄÕÂµØÖ·
+//                    // 	?????????
 //                    if (returnData.has("url"))
 //                        record.setUrl(returnData.getString("url"));
 //
-//                    // 		ÎÄÕÂÈë¿âÊ±¼ä
+//                    // 		??????????
 //                    if (returnData.has("add_time"))
 //                        record.setAddTime(returnData.getString("add_time"));
 //
-//                    // 	ÊµÊ±¸ú×ÙÊ±¼ä
+//                    // 	?????????
 //                    if (returnData.has("monitor_time"))
 //                        record.setMonitorTime(returnData.getString("monitor_time"));
 //
-//                    // 	ÎÄÕÂÔÄ¶ÁÊı
+//                    // 	?????????
 //                    if (returnData.has("readnum"))
 //                        record.setReadNum(returnData.getInt("readnum"));
 //
-//                    // 	ÎÄÕÂµãÔŞÊı
+//                    // 	?????????
 //                    if (returnData.has("likenum"))
 //                        record.setLikeNum(returnData.getInt("likenum"));
 //
-//                    // 	ÎÄÕÂÎ»ÖÃ
+//                    // 	????ï¿½ï¿½??
 //                    if (returnData.has("top"))
 //                        record.setLikeNum(returnData.getInt("top"));
 //
-//                    // 	ÊÇ·ñÍ¬²½
+//                    // 	??????
 //                    if (returnData.has("ispush"))
 //                        record.setIsPush(returnData.getInt("ispush"));
 //
-//                    // 	·âÃæµØÖ·
+//                    // 	??????
 //                    if (returnData.has("picurl"))
 //                        record.setPicUrl(returnData.getString("picurl"));
 //
-//                    // 	Ô­ÎÄµØÖ·
+//                    // 	?????
 //                    if (returnData.has("sourceurl"))
 //                        record.setSourceUrl(returnData.getString("sourceurl"));
 //
-//                    // 	ÎÄÕÂ×÷Õß
+//                    // 	????????
 //                    if (returnData.has("author"))
 //                        record.setAuthor(returnData.getString("author"));
 //
-//                    // 	Í¼Æ¬µØÖ· ( ËµÃ÷ : ·Ç¶¨ÖÆ²»Ìá¹©´ËURLµØÖ·)
+//                    // 	????? ( ??? : ??????????URL???)
 //                    if (returnData.has("desc"))
 //                        record.setDesc(returnData.getString("desc"));
 //
-//                    // 	ÊÓÆµµØÖ· ( ËµÃ÷ : ·Ç¶¨ÖÆ²»Ìá¹©´ËURLµØÖ· )
+//                    // 	?????? ( ??? : ??????????URL??? )
 //                    if (returnData.has("videourl"))
 //                        record.setVideoUrl(returnData.getString("videourl"));
 //
-//                    // 	Í¼Æ¬µØÖ· ( ËµÃ÷ : ·Ç¶¨ÖÆ²»Ìá¹©´ËURLµØÖ·)
+//                    // 	????? ( ??? : ??????????URL???)
 //                    if (returnData.has("imgsurl"))
 //                        record.setImgsUrl(returnData.getString("imgsurl"));
 //
@@ -474,14 +484,14 @@ public class DataApi {
 //            }
 //
 //        } catch (Exception e) {
-//            logger.error("»ñÈ¡´úÂë³ö´í:", e);
+//            logger.error("??????????:", e);
 //        }
 //
 //        return results;
 //    }
 //
 //    /**
-//     * Í¨¹ıGSDATA SDKµ÷ÓÃ»ñÈ¡ÕıÎÄ
+//     * ???GSDATA SDK??????????
 //     *
 //     * @return
 //     */
@@ -492,10 +502,10 @@ public class DataApi {
 //            Map<String, Object> requestParamsMap = new HashMap<String, Object>();
 //            requestParamsMap.put("url", gsWeixinUrl);
 //
-//            //µ÷ÓÃ½Ó¿Ú
+//            //??????
 //            String ret_json = apiSdk.callInterFace(CustomAPI_wx_content, requestParamsMap);
 //
-//            //½«Utf8×ª»»³Égbk
+//            //??Utf8?????gbk
 //            //ret_json = StringUtil.utf82gbk(ret_json);
 //
 //            if (ret_json == null)
@@ -516,16 +526,16 @@ public class DataApi {
 //            logger.debug(gsWeixinUrl + "\t" + content);
 //
 //        } catch (Exception e) {
-//            logger.error("»ñÈ¡´úÂë³ö´í:", e);
+//            logger.error("??????????:", e);
 //        }
 //
 //        return content;
 //    }
 //
 //    /**
-//     * »ñÈ¡Ò»¸ö¹«ÖÚºÅÏêÇé
+//     * ???????????????
 //     *
-//     * @param wxName Î¢ĞÅºÅ
+//     * @param wxName ????
 //     * @return
 //     */
 //    public ResNickNameOneResult getNickNameOne(String wxName) {
@@ -535,10 +545,10 @@ public class DataApi {
 //            Map<String, Object> requestParamsMap = new HashMap<String, Object>();
 //            requestParamsMap.put("wx_name", wxName);
 //
-//            //µ÷ÓÃ½Ó¿Ú
+//            //??????
 //            String ret_json = apiSdk.callInterFace(CustomAPI_addname_weixin2group, requestParamsMap);
 //
-//            //½«Utf8×ª»»³Égbk
+//            //??Utf8?????gbk
 //            //ret_json = StringUtil.utf82gbk(ret_json);
 //
 //            if (ret_json == null)
@@ -553,103 +563,103 @@ public class DataApi {
 //                if (returnData == null || returnData.length() == 0)
 //                    return null;
 //
-//                // ·µ»Ø½á¹û
+//                // ??????
 //                resNickNameOneResult = new ResNickNameOneResult();
-//                // Æ½Ì¨ÄÚ¹«ÖÚºÅID
+//                // ????????ID
 //                if (returnData.has("id"))
 //                    resNickNameOneResult.setId(returnData.getInt("id"));
-//                // ¹«ÖÚºÅÃûêÇ³Æ
+//                // ??????????
 //                if (returnData.has("wx_nickname"))
 //                    resNickNameOneResult.setWxNickname(returnData.getString("wx_nickname"));
 //
-//                // ´ı¶¨
+//                // ????
 //                if (returnData.has("wx_openid"))
 //                    resNickNameOneResult.setWxOpenid(returnData.getString("wx_openid"));
 //
-//                // Î¢ĞÅ¹Ù·½biz
+//                // ?????biz
 //                if (returnData.has("wx_biz"))
 //                    resNickNameOneResult.setWxBiz(returnData.getString("wx_biz"));
 //
-//                // ¹«ÖÚºÅÀàĞÍ
+//                // ?????????
 //                if (returnData.has("wx_type"))
 //                    resNickNameOneResult.setWxType(returnData.getInt("wx_type"));
 //
-//                // ¹«ÖÚÕËºÅ
+//                // ???????
 //                if (returnData.has("wx_name"))
 //                    resNickNameOneResult.setWxName(returnData.getString("wx_name"));
 //
-//                // ¹«ÖÚºÅ¶şÎ¬ÂëµØÖ·
+//                // ???????????
 //                if (returnData.has("wx_qrcode"))
 //                    resNickNameOneResult.setWxQrcode(returnData.getString("wx_qrcode"));
 //
-//                // ¹«ÖÚºÅÃèÊö
+//                // ?????????
 //                if (returnData.has("wx_note"))
 //                    resNickNameOneResult.setWxNote(returnData.getString("wx_note"));
 //
-//                // ÊÇ·ñÈÏÖ¤
+//                // ??????
 //                if (returnData.has("wx_vip")) {
 //                    resNickNameOneResult.setWxVip(returnData.getString("wx_vip"));
 //                }
 //
-//                // ÈÏÖ¤ĞÅÏ¢
+//                // ??????
 //                if (returnData.has("wx_vip_note")) {
 //                    resNickNameOneResult.setWxVipNote(returnData.getString("wx_vip_note"));
 //                }
 //
-//                // ¹«ÖÚºÅËùÊô¹ú¼Ò
+//                // ?????????????
 //                if (returnData.has("wx_country")) {
 //                    resNickNameOneResult.setWxCountry(returnData.getString("wx_country"));
 //                }
 //
-//                // ¹«ÖÚºÅËùÊôÊ¡·İ
+//                // ????????????
 //                if (returnData.has("wx_country"))
 //                    resNickNameOneResult.setWxProvince(returnData.getString("wx_province"));
 //
-//                // ¹«ÖÚºÅËùÊô³ÇÊĞ
+//                // ?????????????
 //                if (returnData.has("wx_city"))
 //                    resNickNameOneResult.setWxCity(returnData.getString("wx_city"));
 //
-//                // ×îĞÂÎÄÕÂ±êÌâ
+//                // ???????ï¿½ï¿½???
 //                if (returnData.has("wx_title"))
 //                    resNickNameOneResult.setWxTitle(returnData.getString("wx_title"));
 //
-//                // 	×îĞÂÎÄÕÂµØÖ·
+//                // 	??????????
 //                if (returnData.has("wx_url"))
 //                    resNickNameOneResult.setWxUrl(returnData.getString("wx_url"));
 //
-//                // ×îĞÂÎÄÕÂ·¢²¼Ê±¼ä
+//                // ???????ï¿½ï¿½??????
 //                if (returnData.has("wx_url_posttime"))
 //                    resNickNameOneResult.setWxUrlPosttime(returnData.getString("wx_url_posttime"));
 //
-//                // 	ÓÃ»§ID
+//                // 	???ID
 //                if (returnData.has("uid"))
 //                    resNickNameOneResult.setUid(returnData.getInt("uid"));
 //
-//                // ¿ªÊ¼²É¼¯Ê±¼ä
+//                // ?????????
 //                if (returnData.has("time_start"))
 //                    resNickNameOneResult.setTimeSart(returnData.getString("time_start"));
 //
-//                // ½áÊø²É¼¯Ê±¼ä
+//                // ??????????
 //                if (returnData.has("time_end"))
 //                    resNickNameOneResult.setTimeEnd(returnData.getString("time_end"));
 //
-//                // ½áÊøÊ±¼ä
+//                // ???????
 //                if (returnData.has("time_stop"))
 //                    resNickNameOneResult.setTimeStop(returnData.getString("time_stop"));
 //
-//                // Ìí¼ÓÊ±¼ä
+//                // ??????
 //                if (returnData.has("add_time"))
 //                    resNickNameOneResult.setAddTime(returnData.getString("add_time"));
 //
-//                // 	×´Ì¬
+//                // 	??
 //                if (returnData.has("status"))
 //                    resNickNameOneResult.setStatus(returnData.getInt("status"));
 //
-//                // 	ÊÇ·ñ¿ÉÓÃ 0¿ÉÓÃ 1½ûÓÃ
+//                // 	?????? 0???? 1????
 //                if (returnData.has("isenable"))
 //                    resNickNameOneResult.setIsEnable(returnData.getInt("isenable"));
 //
-//                // 	¸üĞÂ×´Ì¬
+//                // 	??????
 //                if (returnData.has("update_status"))
 //                    resNickNameOneResult.setUpdateStatus(returnData.getInt("update_status"));
 //
@@ -667,9 +677,9 @@ public class DataApi {
 //    }
 //
 //    /**
-//     * Ìí¼ÓÎ¢ĞÅºÅµ½·Ö×é
+//     * ????????????
 //     *
-//     * @param weixinNames Î¢ĞÅ¹«ÖÚºÅ£¬¶à¸öÓÃ¡°,¡±·Ö¸ô
+//     * @param weixinNames ????????????ï¿½ï¿½?,?????
 //     * @return
 //     */
 //    public boolean addWeixin2Group(String weixinNames, String originUrl) {
@@ -686,7 +696,7 @@ public class DataApi {
 //             JsonParser json = new JsonParser();
 //
 //             JsonObject jsonObject = json.parse(ret_json).getAsJsonObject().getAsJsonObject("returnData");
-//             if(jsonObject==null){//ÅĞ¶ÁÈç¹ûreturnDataÎªnullÔò·Ö×éÖĞÃ»ÓĞ´ËÎ¢ĞÅºÅ£¬ÔòÌí¼Ó
+//             if(jsonObject==null){//?ï¿½ï¿½????returnData?null?????????ï¿½ï¿½???????????
 //             requestParamsMap = new HashMap<String, Object>();
 //                 requestParamsMap.put("groupid",gsdata_groupID);
 //                 requestParamsMap.put("url", originUrl);
@@ -703,14 +713,14 @@ public class DataApi {
 //
 //             requestParamsMap.put("wxJson", "[ {\"nickname_id\":\"" + id + "\"}]");
 //
-//             //µ÷ÓÃ½Ó¿Ú
+//             //??????
 //             ret_json = dataApi.callInterFace(CustomAPI_add_weixin2group, requestParamsMap);
 //            }else{
-//                logger.error("Î¢ĞÅºÅ£º"+weixinNames+"£¬Î´»ñÈ¡µ½¸ÃÎ¢ĞÅ¹«ÖÚºÅÏêÇé£¬ÇÒÏòĞ¡×éÌí¼Ó¸Ã¹¤×÷Î¢ĞÅºÅÊ§°Ü£¡");
+//                logger.error("?????"+weixinNames+"??ï¿½ï¿½?????????????????ï¿½????ï¿½ï¿½?????ï¿½ï¿½???????????");
 //            }
 //			*/
 //        } catch (Exception e) {
-//            logger.error("»ñÈ¡´úÂë³ö´í:", e);
+//            logger.error("??????????:", e);
 //        }
 //
 //        if (ret_json != null) {
@@ -727,7 +737,7 @@ public class DataApi {
 //                    return true;
 //
 //            } catch (Exception e) {
-//                logger.error("»ñÈ¡´úÂë³ö´í:", e);
+//                logger.error("??????????:", e);
 //            }
 //        }
 //
@@ -735,9 +745,9 @@ public class DataApi {
 //    }
 //
 //    /**
-//     * Ìí¼ÓÎ¢ĞÅ¹«ÖÚÕËºÅµ½·Ö×é²¢¼ÓÈë¼à²â£¬·µ»Ø¹«ÖÚºÅÏà¹ØĞÅÏ¢£¨Ö»ÊÊÓÃÈËÃñÈÕ±¨£©
+//     * ????????????????ï¿½ï¿½????????????????????????????????????
 //     *
-//     * @param originUrl ´ıÌí¼ÓµÄÎ¢ĞÅ¹«ÖÚºÅµÄÎÄÕÂµØÖ·£º "url":"http://mp.weixin.qq.com/s?__biz=MTI0MDU3NDYwMQ==&mid=237223945&idx=4&sn=4dc9b60a32cc91e516bcb5983116314e&3rd=MzA3MDU4NTYzMw==&scene=6#rd"
+//     * @param originUrl ?????????????????????? "url":"http://mp.weixin.qq.com/s?__biz=MTI0MDU3NDYwMQ==&mid=237223945&idx=4&sn=4dc9b60a32cc91e516bcb5983116314e&3rd=MzA3MDU4NTYzMw==&scene=6#rd"
 //     * @return
 //     */
 //    public GroupMonitorAddResult addWeixin2Group(String originUrl) {
@@ -767,7 +777,7 @@ public class DataApi {
 //                result.setBiz(returnData.getString("biz"));
 //
 //        } catch (Exception e) {
-//            logger.error("»ñÈ¡´úÂë³ö´í:", e);
+//            logger.error("??????????:", e);
 //        }
 //
 //
@@ -776,7 +786,7 @@ public class DataApi {
 //
 //
 //    /**
-//     * É¾³ıÎ¢ĞÅºÅµ½·Ö×é
+//     * ????????????
 //     *
 //     * @param weixinNames
 //     * @return
@@ -795,7 +805,7 @@ public class DataApi {
 //            requestParamsMap = new HashMap<String, Object>();
 //            requestParamsMap.put("wxJson", "[ {\"nickname_id\":\"" + id + "\"}]");
 //
-//            //µ÷ÓÃ½Ó¿Ú
+//            //??????
 //            ret_json = dataApi.callInterFace(CustomAPI_del_weixin2group, requestParamsMap);
 //
 //        } catch (Exception e) {
@@ -813,14 +823,14 @@ public class DataApi {
 //                    return true;
 //
 //            } catch (Exception e) {
-//                logger.error("»ñÈ¡´úÂë³ö´í:", e);
+//                logger.error("??????????:", e);
 //            }
 //        }
 //        return false;
 //    }
 //
 //    /**
-//     * api½Ó¿ÚÊµÊ±»ñÈ¡ÎÄÕÂÕıÎÄ
+//     * api????????????????
 //     */
 //    public static String getWeixinContentByUrls(List<String> contentUrlList) {
 //        String result = null;
@@ -828,21 +838,21 @@ public class DataApi {
 //        try {
 //            //
 //            ApiSdk dataApi = ApiSdk.getApiSdk(gsdata_appID, gsdata_appKey);
-//            // »ñÈ¡URLµÄµØÖ·
+//            // ???URL????
 //            requestParamsMap.put("url", StringUtils.join(contentUrlList, ","));
-//            // µ÷ÓÃ½Ó¿Ú
+//            // ??????
 //            result = dataApi.callInterFace(CUSTOMAPI_CONTENT, requestParamsMap);
 //            logger.info("url:" + requestParamsMap + " api:" + CUSTOMAPI_CONTENT + " response json:" + result);
 //
 //        } catch (Exception ex) {
-//            // Êä³öÈÕÖ¾
-//            logger.error(CUSTOMAPI_CONTENT + "»ñÈ¡´úÂë³ö´í:", ex);
+//            // ??????
+//            logger.error(CUSTOMAPI_CONTENT + "??????????:", ex);
 //        }
 //        return result;
 //    }
 //
 //    /**
-//     * »ñÈ¡ÓÃ»§ËùÓĞ·Ö×éĞÅÏ¢
+//     * ?????????ï¿½ï¿½??????
 //     *
 //     * @return
 //     */
@@ -851,29 +861,29 @@ public class DataApi {
 //
 //        try {
 //            /*
-//             * ²ÎÊı¼¯ºÏ ´Ë´¦²ÎÊı²»ĞèÒª¼ÓappidºÍappkey,ÒòÎªÉÏÃæ¹¹Ôìµ¥Àı¶ÔÏóÊ±£¬ÒÑ¾­Ä¬ÈÏ¼ÓÉÏÁË£¬
-//             * Èç¹ûÊ¹ÓÃ·Çµ¥Àı¶ÔÏóÄ£Ê½£¬ÔÚÏÂÃæ²ÎÊı¼¯ºÏÖĞĞèÒª ¼ÓÉÏappidºÍappkey
+//             * ???????? ??????????????appid??appkey,??????ï¿½ï¿½???????????????????????
+//             * ?????ï¿½ï¿½?????????????????????????????? ????appid??appkey
 //             */
 //            Map<String, Object> requestParamsMap = new HashMap<String, Object>();
 //
 //            SimpleDateFormat formats = new SimpleDateFormat("yyyy-MM-dd");
 //
 //            requestParamsMap.put("groupid", 45024);
-//            //ÓÃÓÚËÑË÷µÄ¹Ø¼ü´ÊµÄKey
+//            //???????????????Key
 //            requestParamsMap.put("start", 0);
 //            requestParamsMap.put("num", 20);
 //
-//            //µ÷ÓÃ½Ó¿Ú
+//            //??????
 ////            ret_json = apiSdk.callInterFace(CustomAPI_wx_url_4, requestParamsMap);
 //            ret_json = apiSdk.callInterFace(get_all_group, requestParamsMap);
 //
 //            logger.info(ret_json);
 //
-//            //½«Utf8×ª»»³Égbk
+//            //??Utf8?????gbk
 //            //ret_json = StringUtil.utf82gbk(ret_json);
 //
 //        } catch (Exception e) {
-//            logger.error("»ñÈ¡´úÂë³ö´í:", e);
+//            logger.error("??????????:", e);
 //        }
 //
 //        return ret_json;
@@ -892,7 +902,7 @@ public class DataApi {
 //
 //        ArrayList<OriginNews> articleList = new ArrayList<OriginNews>();
 //
-//        //2. »ñÈ¡½Ó¿ÚÊı¾İ£¬²¢½âÎö³ÉÎÄÕÂ
+//        //2. ???????????????????????
 //        int pageNo = 2;
 //        String articlePage = spider.getAllGroup();
 ////        while (true) {
@@ -934,11 +944,11 @@ public class DataApi {
 //    }
 //
 //    /**
-//     * Ö÷ÒªÊÇ¹©Çå²©ÊµÊ±¸ú×ÙµÄ½Ó¿ÚµÄµ÷ÓÃ
+//     * ???????ï¿½ï¿½?????????????
 //     *
-//     * @param key       ÓÃÓÚËÑË÷µÄ¹Ø¼ü´ÊµÄKey
-//     * @param keyword   ÓÃÓÚËÑË÷µÄ¹Ø¼ü´Ê
-//     * @param expiryNum ËÑË÷µÄÊ±³¤£¬µ¥Î»ÊÇÌì£¬½áÊøÊ±¼äÎª¿ªÊ¼Ê±¼ä+ expiry_num
+//     * @param key       ???????????????Key
+//     * @param keyword   ??????????????
+//     * @param expiryNum ?????????????ï¿½ï¿½??????????????????+ expiry_num
 //     */
 //    public PdmiKeyWordAddResult addPdmiKeyWord(String key, String keyword, int expiryNum) {
 //
@@ -947,15 +957,15 @@ public class DataApi {
 //
 //        try {
 //
-//            // ËÑË÷µÄ¹Ø¼ü´Ê
+//            // ??????????
 //            requestParamsMap.put("keyword", keyword);
-//            //ÓÃÓÚËÑË÷µÄ¹Ø¼ü´ÊµÄKey
+//            //???????????????Key
 //            requestParamsMap.put("key", key);
-//            // ËÑË÷µÄÊ±³¤£¬µ¥Î»ÊÇÌì£¬½áÊøÊ±¼äÎª¿ªÊ¼Ê±¼ä+ expiry_num
+//            // ?????????????ï¿½ï¿½??????????????????+ expiry_num
 //            requestParamsMap.put("expiry_num", expiryNum);
-//            // ²Ù×÷ÀàĞÍ
+//            // ????????
 //            requestParamsMap.put("opt_type", 1);
-//            // µ÷ÓÃ½Ó¿Ú
+//            // ??????
 //            jsonResponeData = searchRealKeyWord(requestParamsMap);
 //
 //            if (StringUtils.isNotBlank(jsonResponeData)) {
@@ -963,7 +973,7 @@ public class DataApi {
 //                // int returnCode = jo.getInt("returnCode");
 //
 //                JSONObject returnData = jsonObject.getJSONObject("returnData");
-//                //  ³õÊ¼»¯·µ»ØµÄÄÚÈİ
+//                //  ??????????????
 //                PdmiKeyWordAddResult result = new PdmiKeyWordAddResult();
 //                if (returnData.has("key"))
 //                    result.setKey(returnData.getString("key"));
@@ -979,45 +989,45 @@ public class DataApi {
 //                logger.debug(API_PDMI_KEYWORD + " params:" + requestParamsMap
 //                        + "\n response:" + jsonResponeData);
 //
-//                // ·µ»Ø½á¹û
+//                // ??????
 //                return result;
 //            }
 //            logger.info(API_PDMI_KEYWORD + " params:" + requestParamsMap
 //                    + "\n response is null:" + jsonResponeData);
 //
 //        } catch (Exception e) {
-//            logger.error(API_PDMI_KEYWORD + "  ²ÎÊıÎª:"
-//                    + new Gson().toJson(requestParamsMap) + "\n response:" + jsonResponeData + "\n»ñÈ¡´úÂë³ö´í:", e);
+//            logger.error(API_PDMI_KEYWORD + "  ?????:"
+//                    + new Gson().toJson(requestParamsMap) + "\n response:" + jsonResponeData + "\n??????????:", e);
 //        }
 //        return null;
 //    }
 //
 //    /**
-//     * Ö÷ÒªÊÇ¹©Çå²©ÊµÊ±¸ú×ÙµÄ½Ó¿ÚµÄµ÷ÓÃ
+//     * ???????ï¿½ï¿½?????????????
 //     *
-//     * @param key       ÓÃÓÚËÑË÷µÄ¹Ø¼ü´ÊµÄKey,¿ÉÒÔÎª¿Õ
-//     * @param pageIndex µ±Ç°»ñÈ¡µÄÒ³Âë
-//     * @param pageSize  Ã¿Ò³·µ»ØµÄÊı¾İÁ¿´óĞ¡¡£×î´óÎª50
+//     * @param key       ???????????????Key,???????
+//     * @param pageIndex ???????????
+//     * @param pageSize  ???????????????ï¿½ï¿½??????50
 //     */
 //    public PdmiKeyWordGetResult getPdmiKeyWordList(String key, int pageIndex, int pageSize) {
 //        try {
 //            Map<String, Object> requestParamsMap = new HashMap<String, Object>();
 //
-//            //ÓÃÓÚËÑË÷µÄ¹Ø¼ü´ÊµÄKey
+//            //???????????????Key
 //            if (StringUtils.isNotBlank(key)) {
 //                requestParamsMap.put("key", key);
 //            }
-//            // ²Ù×÷ÀàĞÍ
+//            // ????????
 //            requestParamsMap.put("opt_type", 2);
-//            // µ±Ç°»ñÈ¡µÄÒ³Âë
+//            // ???????????
 //            requestParamsMap.put("page_index", pageIndex);
-//            // Ä¬ÈÏÊÇ50
+//            // ?????50
 //            if (pageSize <= 0 || pageSize > 50) {
 //                pageSize = 50;
 //            }
-//            // Ã¿Ò³·µ»ØµÄÊı¾İÁ¿´óĞ¡¡£×î´óÎª50
+//            // ???????????????ï¿½ï¿½??????50
 //            requestParamsMap.put("page_size", pageSize);
-//            // µ÷ÓÃ½Ó¿Ú
+//            // ??????
 //            String jsonResponeData = searchRealKeyWord(requestParamsMap);
 //
 //            if (StringUtils.isNotBlank(jsonResponeData)) {
@@ -1032,7 +1042,7 @@ public class DataApi {
 //                    PdmiKeyWordAddResult record = null;
 //                    for (int i = 0; i < returnData.length(); i++) {
 //                        JSONObject item = (JSONObject) returnData.get(i);
-//                        //  ³õÊ¼»¯·µ»ØµÄÄÚÈİ
+//                        //  ??????????????
 //                        record = new PdmiKeyWordAddResult();
 //                        if (item.has("key"))
 //                            record.setKey(item.getString("key"));
@@ -1047,7 +1057,7 @@ public class DataApi {
 //                        records.add(record);
 //                    }
 //                    result.setRecords(records);
-//                    // ·µ»Ø½á¹û
+//                    // ??????
 //                    return result;
 //                }
 //            }
@@ -1055,52 +1065,52 @@ public class DataApi {
 //                    + " response:" + jsonResponeData);
 //
 //        } catch (Exception e) {
-//            logger.error(API_PDMI_KEYWORD + "»ñÈ¡´úÂë³ö´í:", e);
+//            logger.error(API_PDMI_KEYWORD + "??????????:", e);
 //        }
 //        return null;
 //    }
 //
 //    /**
-//     * Ö÷ÒªÊÇ¹©Çå²©ÊµÊ±¸ú×ÙµÄ½Ó¿ÚµÄµ÷ÓÃ
+//     * ???????ï¿½ï¿½?????????????
 //     *
-//     * @param key       ÓÃÓÚËÑË÷µÄ¹Ø¼ü´ÊµÄKey,¿ÉÒÔÎª¿Õ
-//     * @param pageIndex µ±Ç°»ñÈ¡µÄÒ³Âë
-//     * @param pageSize  Ã¿Ò³·µ»ØµÄÊı¾İÁ¿´óĞ¡¡£×î´óÎª50
-//     * @param searchDay ĞèÒª²éÑ¯µÄÈÕÆÚ ¿ÉÒÔÎª¿Õ£¬¸ñÊ½Îª2017-05-25,Èç¹ûÎª¿Õ£¬±íÊ¾Ö»²éÑ¯µ±Ìì
+//     * @param key       ???????????????Key,???????
+//     * @param pageIndex ???????????
+//     * @param pageSize  ???????????????ï¿½ï¿½??????50
+//     * @param searchDay ???????????? ????????????2017-05-25,??????????????????
 //     */
 //    public PdmiKeyWordGetResult getPdmiKeyWordList(String key, int pageIndex, int pageSize, String searchDay) {
 //        try {
 //            Map<String, Object> requestParamsMap = new HashMap<String, Object>();
 //
-//            //ÓÃÓÚËÑË÷µÄ¹Ø¼ü´ÊµÄKey
+//            //???????????????Key
 //            if (StringUtils.isNotBlank(key)) {
 //                requestParamsMap.put("key", key);
 //            }
-//            // ²Ù×÷ÀàĞÍ
+//            // ????????
 //            requestParamsMap.put("opt_type", 2);
-//            // µ±Ç°»ñÈ¡µÄÒ³Âë
+//            // ???????????
 //            requestParamsMap.put("page_index", pageIndex);
-//            // Ä¬ÈÏÊÇ50
+//            // ?????50
 //            if (pageSize <= 0 || pageSize > 50) {
 //                pageSize = 50;
 //            }
-//            // Ã¿Ò³·µ»ØµÄÊı¾İÁ¿´óĞ¡¡£×î´óÎª50
+//            // ???????????????ï¿½ï¿½??????50
 //            requestParamsMap.put("page_size", pageSize);
 //
 //            long datetime = 0l;
-//            // ÅĞ¶Ï²éÑ¯ÈÕÆÚµÄÄÚÈİ
+//            // ?ï¿½ï¿½????????????
 //            if (StringUtils.isBlank(searchDay)) {
-//                // ²éÑ¯µ±ÌìµÄÊı¾İ
+//                // ????????????
 //                datetime = DateUtils.parseDate(DateFormatUtils.format(new Date(),
 //                        "yyyy-MM-dd") + " 00:00:00", new String[]{"yyyy-MM-dd HH:mm:ss"}).getTime();
 //            } else {
-//                // ×ª»»³ÉĞèÒª²éÑ¯µÄÄÇÒ»ÌìµÄÊı¾İ
+//                // ???????????????????????
 //                datetime = DateUtils.parseDate(searchDay + " 00:00:00", new String[]{"yyyy-MM-dd HH:mm:ss"}).getTime();
 //            }
-//            // Ìí¼Ó²éÑ¯µÄÊ±¼ä
+//            // ??????????
 //            requestParamsMap.put("datetime", String.valueOf(datetime));
 //
-//            // µ÷ÓÃ½Ó¿Ú
+//            // ??????
 //            String jsonResponeData = searchRealKeyWord(requestParamsMap);
 //
 //            if (StringUtils.isNotBlank(jsonResponeData)) {
@@ -1115,7 +1125,7 @@ public class DataApi {
 //                    PdmiKeyWordAddResult record = null;
 //                    for (int i = 0; i < returnData.length(); i++) {
 //                        JSONObject item = (JSONObject) returnData.get(i);
-//                        //  ³õÊ¼»¯·µ»ØµÄÄÚÈİ
+//                        //  ??????????????
 //                        record = new PdmiKeyWordAddResult();
 //                        if (item.has("key"))
 //                            record.setKey(item.getString("key"));
@@ -1130,7 +1140,7 @@ public class DataApi {
 //                        records.add(record);
 //                    }
 //                    result.setRecords(records);
-//                    // ·µ»Ø½á¹û
+//                    // ??????
 //                    return result;
 //                }
 //            }
@@ -1138,24 +1148,24 @@ public class DataApi {
 //                    + " response:" + jsonResponeData);
 //
 //        } catch (Exception e) {
-//            logger.error(API_PDMI_KEYWORD + "»ñÈ¡´úÂë³ö´í:", e);
+//            logger.error(API_PDMI_KEYWORD + "??????????:", e);
 //        }
 //        return null;
 //    }
 //
 //    /**
-//     * Çå²©Êı¾İµÄÉ¾³ı½Ó¿Ú
+//     * ?ï¿½ï¿½???????????
 //     *
-//     * @param key ÓÃÓÚËÑË÷µÄ¹Ø¼ü´ÊµÄKey
+//     * @param key ???????????????Key
 //     */
 //    public String deletePdmiKeyWord(String key) {
 //        try {
 //            Map<String, Object> requestParamsMap = new HashMap<String, Object>();
-//            //ÓÃÓÚËÑË÷µÄ¹Ø¼ü´ÊµÄKey
+//            //???????????????Key
 //            requestParamsMap.put("key", key);
-//            // ²Ù×÷ÀàĞÍ
+//            // ????????
 //            requestParamsMap.put("opt_type", 3);
-//            // µ÷ÓÃ½Ó¿Ú
+//            // ??????
 //            String jsonResponeData = searchRealKeyWord(requestParamsMap);
 //
 //            if (StringUtils.isNotBlank(jsonResponeData)) {
@@ -1171,16 +1181,16 @@ public class DataApi {
 //                    + " response:" + jsonResponeData);
 //
 //        } catch (Exception e) {
-//            logger.error(API_PDMI_KEYWORD + "»ñÈ¡´úÂë³ö´í:", e);
+//            logger.error(API_PDMI_KEYWORD + "??????????:", e);
 //        }
 //        return null;
 //    }
 //
 //    /**
-//     * »ñÈ¡ÊµÊ±Êı¾İµÄ½Ó¿ÚÊı¾İ
+//     * ????????????????
 //     *
-//     * @param requestParamsMap ´«ÈëµÄ²ÎÊı
-//     * @return ·µ»ØµÄ½á¹ûÄÚÈİ
+//     * @param requestParamsMap ????????
+//     * @return ???????????
 //     */
 //    private String searchRealKeyWord(Map<String, Object> requestParamsMap) {
 //
@@ -1188,19 +1198,19 @@ public class DataApi {
 //        try {
 //            ApiSdk dataApi = ApiSdk.getApiSdk(gsdata_appID, gsdata_appKey);
 //
-//            // µ÷ÓÃ½Ó¿Ú
+//            // ??????
 //            jsonResponeData = dataApi.callInterFace(API_PDMI_KEYWORD, requestParamsMap);
 //
 //            logger.debug(API_PDMI_KEYWORD + " params:" + requestParamsMap + " response:" + jsonResponeData);
 //
 //        } catch (Exception e) {
-//            logger.error(API_PDMI_KEYWORD + "»ñÈ¡´úÂë³ö´í:", e);
+//            logger.error(API_PDMI_KEYWORD + "??????????:", e);
 //        }
 //        return jsonResponeData;
 //    }
 //
 //    /**
-//     * ¸ù¾İÎ¢ĞÅºÅ»ñÈ¡Çå²©Î¢ĞÅĞÅÏ¢
+//     * ???????????ï¿½ï¿½??????
 //     *
 //     * @param wxname
 //     * @return
@@ -1214,22 +1224,22 @@ public class DataApi {
 //    }
 //
 //    /**
-//     * ÊµÊ±»ñÈ¡µ¥ÆªÎ¢ĞÅÎÄÕÂÔÄ¶ÁÊıµãÔŞÊı
+//     * ??????????????????????????
 //     *
-//     * @param url ĞèÒª»ñÈ¡µÄURLµØÖ·
-//     * @return ·µ»¦»ñÈ¡µÄ½á¹û
+//     * @param url ????????URL???
+//     * @return ???????????
 //     */
 //    public WxNumsMonitorResult getWxNumsMonitorData(String url) {
 //        WxNumsMonitorResult result = null;
-//        // µ÷ÓÃ½Ó¿Ú
+//        // ??????
 //        String jsonResponeData = null;
 //        try {
 //            ApiSdk dataApi = ApiSdk.getApiSdk(gsdata_appID, gsdata_appKey);
 //
 //            Map<String, Object> requestParamsMap = new HashMap<String, Object>();
-//            //ÓÃÓÚËÑË÷µÄ¹Ø¼ü´ÊµÄKey
+//            //???????????????Key
 //            requestParamsMap.put("url", url);
-//            // µ÷ÓÃ½Ó¿Ú
+//            // ??????
 //            jsonResponeData = dataApi.callInterFace(API_WX_NUMS_MONITOR, requestParamsMap);
 //
 //            if (StringUtils.isNotBlank(jsonResponeData)) {
@@ -1238,28 +1248,28 @@ public class DataApi {
 //                JSONObject returnData = jsonObject.getJSONObject("returnData");
 //                if (returnData.length() > 0) {
 //                    result = new WxNumsMonitorResult();
-//                    // 	½á¹ûÃèÊö£¨0:Ä¬ÈÏ³É¹¦£¬ÆäËû¼û½Ó¿Ú·µ»Ø£©
+//                    // 	?????????0:????????????????????
 //                    if (returnData.has("status"))
 //                        result.setStatus(returnData.getInt("status"));
-//                    // 	µãÔŞÊı
+//                    // 	??????
 //                    if (returnData.has("likenum"))
 //                        result.setLikeNum(returnData.getInt("likenum"));
-//                    // ÕæÊµÔÄ¶ÁÊı£¨Õë¶Ô10w+ÔÄ¶ÁÁ¿£©
+//                    // ?????????????10w+???????
 //                    if (returnData.has("real_read_num"))
 //                        result.setRealReadNum(returnData.getInt("real_read_num"));
-//                    // ÔÄ¶ÁÊı
+//                    // ?????
 //                    if (returnData.has("readnum"))
 //                        result.setReadNum(returnData.getInt("readnum"));
 //
-//                    // ·µ»Ø½á¹û
+//                    // ??????
 //                    return result;
 //                }
 //            }
-//            // ´ò³öÈÕÖ¾
+//            // ??????
 //            logger.debug(API_WX_NUMS_MONITOR + " params:" + requestParamsMap + " response:" + jsonResponeData);
 //
 //        } catch (Exception e) {
-//            logger.error(API_WX_NUMS_MONITOR + "response data:" + jsonResponeData + "»ñÈ¡´úÂë³ö´í:", e);
+//            logger.error(API_WX_NUMS_MONITOR + "response data:" + jsonResponeData + "??????????:", e);
 //            result = null;
 //        }
 //        return result;
